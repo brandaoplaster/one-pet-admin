@@ -1,5 +1,5 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
-  mount Sidekiq::web => '/sidekiq'
+  mount Sidekiq::Web => '/sidekiq'
 end
