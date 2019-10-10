@@ -1,9 +1,12 @@
 class Sell < ApplicationRecord
   include Fae::BaseModelConcern
-  def fae_display_field
-    
-  end
+
+  validates :client, presence: true
 
   belongs_to :discount
   belongs_to :client
+
+  def fae_display_field
+
+  end
 end
