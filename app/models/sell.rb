@@ -11,8 +11,8 @@ class Sell < ApplicationRecord
   has_many :sell_products
   has_many :products, through: :sell_products
 
-  has_many :sell_products
-  has_many :sell_services, through: :sell_services
+  has_many :sell_services
+  has_many :services, through: :sell_services
 
   before_save :set_total
 
